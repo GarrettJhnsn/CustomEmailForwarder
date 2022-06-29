@@ -4,7 +4,6 @@ function CustomEmailForwarder(){
     initLabels();
     var threads = getThreads();
     getEmailData(threads);
-    
     removeThreadsFromLabel(threads);
 }
 
@@ -13,8 +12,7 @@ function getThreads(){
     return getGmailLabel().getThreads();
 }
 
-function getMessages(threads)
-{
+function getMessages(threads){
     return GmailApp.getMessagesForThreads(threads);
 }
 
